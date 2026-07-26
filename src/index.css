@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Space Grotesk', system-ui, sans-serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+
+    /* Neubrutalism Color Palette */
+    --neo-yellow: #FFD93D;
+    --neo-blue: #4D96FF;
+    --neo-red: #FF6B6B;
+    --neo-green: #6BCB77;
+    --neo-purple: #9B51E0;
+    --neo-pink: #FF8AAE;
+    --neo-bg: #FFFDF7;
+    --neo-card-bg: #FFFFFF;
+    --neo-border: #000000;
+  }
+
+  .dark {
+    --neo-bg: #121212;
+    --neo-card-bg: #1E1E24;
+    --neo-border: #000000;
+  }
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--neo-bg);
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: var(--font-heading);
+}
+
+/* Custom Neubrutalism Shadows and Borders */
+.neo-border {
+  border: 4px solid var(--neo-border);
+}
+
+.neo-border-sm {
+  border: 3px solid var(--neo-border);
+}
+
+.neo-border-lg {
+  border: 5px solid var(--neo-border);
+}
+
+.neo-shadow {
+  box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.neo-shadow-sm {
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.neo-shadow-lg {
+  box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.neo-shadow-xl {
+  box-shadow: 12px 12px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.dark .neo-shadow-dark {
+  box-shadow: 5px 5px 0px 0px rgba(255, 255, 255, 0.9);
+}
+
+/* Neubrutalist Interactive States */
+.neo-button {
+  border: 4px solid #000000;
+  box-shadow: 5px 5px 0px 0px #000000;
+  transition: all 0.15s ease-in-out;
+  font-weight: 700;
+}
+
+.neo-button:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 8px 8px 0px 0px #000000;
+}
+
+.neo-button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px 0px #000000;
+}
+
+.neo-card {
+  border: 4px solid #000000;
+  box-shadow: 6px 6px 0px 0px #000000;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.2s ease;
+}
+
+.neo-card-hover:hover {
+  transform: translate(-4px, -4px) rotate(-0.5deg);
+  box-shadow: 10px 10px 0px 0px #000000;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFFDF7;
+  border-left: 3px solid #000;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #18181b;
+  border-left: 3px solid #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FFD93D;
+  border: 3px solid #000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF6B6B;
+}
+
+/* Hide default cursor on desktop when custom cursor active */
+@media (min-width: 1024px) {
+  .custom-cursor-active, .custom-cursor-active * {
+    cursor: none !important;
+  }
+}
