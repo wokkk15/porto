@@ -144,14 +144,22 @@ export const Hero: React.FC = () => {
             </Button>
           </a>
 
-          <Button
-            variant="blue"
-            size="lg"
+          <a
+            href={PERSONAL_INFO.resumeUrl}
+            download="CV_MUHAMMAD_RIVALDI_JEFRI.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={triggerConfetti}
-            icon={<Download className="w-5 h-5" />}
           >
-            Unduh CV
-          </Button>
+            <Button
+              variant="blue"
+              size="lg"
+              icon={<Download className="w-5 h-5" />}
+            >
+              Unduh CV
+            </Button>
+          </a>
+
         </motion.div>
 
         {/* Floating Star Icon */}

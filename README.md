@@ -50,4 +50,4 @@ npm run build
 ---
 
 ## 📝 Lisensi & Hak Cipta
-Hak Cipta © 2024 **Muhammad Rivaldi Jefri**. All rights reserved.
+Hak Cipta © 2026 **Muhammad Rivaldi Jefri**. All rights reserved.

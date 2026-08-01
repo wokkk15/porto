@@ -32,7 +32,7 @@ export const About: React.FC = () => {
             <Card className="relative z-10 bg-white dark:bg-[#1E1E24] text-center overflow-hidden">
               <div className="relative mb-6 mx-auto w-48 h-48 sm:w-56 sm:h-56 rounded-2xl neo-border overflow-hidden bg-[#4D96FF]">
                 <img
-                  src="/profile_avatar.png"
+                  src="/FOTO SAYA.jpeg"
                   alt={PERSONAL_INFO.name}
                   className="w-full h-full object-cover"
                 />

@@ -58,9 +58,9 @@ export const PERSONAL_INFO = {
     'Pengembang Full Stack',
     'Antusias Computer Vision'
   ],
-  bio: 'Lulusan baru (Fresh Graduate) S1 Ilmu Komputer yang berdedikasi dalam bidang Internet of Things (IoT), Pengembangan Web, dan Kecerdasan Buatan (AI). Saya membangun aplikasi scalable yang menghubungkan perangkat keras dan perangkat lunak menjadi solusi digital berdampak tinggi.',
-  location: 'Parepare, Indonesia',
-  education: 'Sarjana Komputer (S.Kom)',
+  bio: 'Freshgraduates S1 Ilmu Komputer dengan predikat memuaskan (IPK 3.86) yang memiliki keahlian kuat dalam pengembangan Internet of Things (IoT) dan Fullstack Web Development. Berpengalaman membangun sistem integrasi perangkat keras dan lunak menggunakan ESP32, MQTT, ThingsBoard, serta framework Laravel dan Vue.js/Inertia.js.',
+  location: 'Parepare, Sulawesi Selatan',
+  education: 'S1 Ilmu Komputer (IPK 3.86)',
   university: 'Institut Teknologi Bacharuddin Jusuf Habibie',
   gpa: '3.86',
   interests: [
@@ -71,14 +71,16 @@ export const PERSONAL_INFO = {
     'Riset & Penelitian'
   ],
   contact: {
-    email: 'rivaldijefri.dev@gmail.com',
-    phone: '+62 822-9111-8842',
-    whatsapp: 'https://wa.me/6282291118842?text=Halo%20Rivaldi!%20Saya%20melihat%20portfolio%20website%20Anda.',
+    email: 'rivalrivaldi572@gmail.com',
+    phone: '+62 81244904571',
+    whatsapp: 'https://wa.me/6281244904571?text=Halo%20Rivaldi!%20Saya%20melihat%20portfolio%20website%20Anda.',
     linkedin: 'https://linkedin.com/in/muhammad-rivaldi-jefri',
     github: 'https://github.com/rivaldijefri',
     instagram: 'https://instagram.com/rivaldijefri_'
-  }
+  },
+  resumeUrl: 'https://drive.google.com/file/d/1hgtA8JgJQ0NSBQwQq5_5VCkkSlAq9Ijm/view?usp=sharing'
 };
+
 
 export const SKILL_CATEGORIES: SkillCategory[] = [
   {
@@ -99,7 +101,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { name: 'Laravel', badgeColor: '#FF2D20' },
       { name: 'Vue.js', badgeColor: '#4FC08D' },
       { name: 'React', badgeColor: '#61DAFB' },
-      { name: 'CodeIgniter', badgeColor: '#EF4223' },
+      { name: 'CodeIgniter 3', badgeColor: '#EF4223' },
       { name: 'Bootstrap', badgeColor: '#7952B3' },
       { name: 'Inertia.js', badgeColor: '#9553E9' }
     ]
@@ -148,9 +150,9 @@ export const PROJECTS: Project[] = [
     id: 'smart-trash-bin',
     title: 'Smart Trash Bin IoT',
     category: 'Internet of Things',
-    description: 'Merancang dan mengembangkan sistem manajemen sampah pintar berbasis IoT menggunakan ESP32, MQTT, sensor ultrasonik, sensor hujan, sensor proximity induktif, motor servo, dan motor stepper. Terintegrasi dengan dashboard ThingsBoard untuk pemantauan real-time.',
-    longDescription: 'Solusi perangkat keras & lunak cerdas end-to-end. Memiliki mekanisme penutup otomatis yang digerakkan oleh sensor jarak ultrasonik dan sensor logam/non-logam proximity induktif, perlindungan otomatis saat hujan, kompaksi sampah otomatis menggunakan motor stepper, serta sinksronisasi telemetry cloud langsung ke dashboard ThingsBoard IoT.',
-    technologies: ['ESP32', 'MQTT', 'ThingsBoard', 'Arduino', 'Laravel', 'MySQL'],
+    description: 'Merancang dan mengembangkan sistem tempat sampah pintar berbasis mikrokontroler ESP32 untuk klasifikasi dan pemilahan otomatis sampah kering, basah, dan logam menggunakan integrasi sensor ultrasonik, rain sensor, dan inductive proximity sensor.',
+    longDescription: 'Solusi perangkat keras & lunak cerdas end-to-end. Memiliki mekanisme pemilahan otomatis dengan sensor ultrasonik, rain sensor, dan proximity induktif, kontrol mekanik aktuator motor servo dan stepper, serta integrasi protokol komunikasi MQTT dengan platform ThingsBoard untuk pemantauan kapasitas kompartemen secara real-time.',
+    technologies: ['ESP32', 'MQTT', 'ThingsBoard', 'Arduino', 'Sensor Ultrasonik', 'Servo & Stepper'],
     image: '/smart_trash_bin.png',
     githubUrl: 'https://github.com/rivaldijefri/smart-trash-bin-iot',
     demoUrl: 'https://thingsboard.cloud/dashboard/smart-trash',
@@ -159,24 +161,24 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 'e-monev-bappeda',
-    title: 'E-Monev Bappeda',
+    title: 'Proyek Sistem E-Monev Bappeda',
     category: 'Sistem Informasi Pemerintah',
-    description: 'Membangun aplikasi frontend responsif untuk sistem monitoring dan evaluasi pembangunan daerah menggunakan Vue.js, Laravel, dan Inertia.js.',
-    longDescription: 'Portal pemerintah daerah yang dibangun khusus untuk Bappeda dalam memantau program pembangunan daerah multi-tahun, alokasi anggaran, persentase kemajuan fisik real-time, pembuatan laporan PDF otomatis, dan visualisasi data interaktif bagi pemangku kebijakan.',
-    technologies: ['Laravel', 'Vue.js', 'Inertia.js', 'Tailwind CSS', 'MySQL'],
-    image: '/emonev_bappeda.png',
-    githubUrl: 'https://github.com/rivaldijefri/e-monev-bappeda',
-    demoUrl: 'https://emonev.bappeda.go.id',
+    description: 'Front-End Developer: Mengembangkan antarmuka pengguna (UI/UX) yang responsif dan interaktif pada aplikasi E-Monev (Elektronik Monitoring dan Evaluasi) untuk mendukung digitalisasi monitoring program kerja pemerintahan Bappeda.',
+    longDescription: 'Membangun arsitektur frontend menggunakan framework Vue.js dan Inertia.js yang terintegrasi secara seamless dengan backend Laravel. Mengimplementasikan pengelolaan data di sisi klien (state management), validasi form dinamis, serta optimalisasi integrasi data dari API backend.',
+    technologies: ['Laravel', 'Vue.js', 'Inertia.js', 'State Management', 'Form Validation'],
+    image: '/bappeda.png',
+    githubUrl: 'https://github.com/AldiAlfatih/BAPPEDA',
+    demoUrl: 'https://bappedaskripsi.space/',
     featured: true,
     color: '#4D96FF'
   },
   {
     id: 'repository-website',
-    title: 'Website Repositori Kampus',
+    title: 'Repository Website Kampus',
     category: 'Pengembangan Web',
-    description: 'Mengembangkan sistem repositori akademik kampus lengkap dengan autentikasi pengguna, manajemen berkas, pencarian cepat, dan dashboard admin menggunakan CodeIgniter dan MySQL.',
-    longDescription: 'Brankas dokumen akademik aman yang memungkinkan mahasiswa dan dosen mengunggah, mengindeks, mencari, dan meninjau naskah skripsi, publikasi riset, dan berkas data penelitian dengan kontrol hak akses berbasis peran.',
-    technologies: ['CodeIgniter', 'MySQL', 'Bootstrap', 'JavaScript', 'PHP'],
+    description: 'Full Stack Web Developer: Membangun website repositori dokumen akademik kampus menggunakan CodeIgniter 3, Bootstrap, dan MySQL berbasis arsitektur Model-View-Controller (MVC).',
+    longDescription: 'Mengembangkan fitur keamanan autentikasi pengguna, manajemen hak akses, modul unggah/unduh file, pencarian cepat (query optimization), dan dashboard admin yang intuitif. Mendesain struktur database relasional dan mengoptimalkan manajemen file.',
+    technologies: ['CodeIgniter 3', 'Bootstrap', 'MySQL', 'PHP Native', 'MVC Architecture'],
     image: '/repo_kampus.png',
     githubUrl: 'https://github.com/wokkk15/repository',
     demoUrl: 'https://github.com/wokkk15/repository',
@@ -187,95 +189,121 @@ export const PROJECTS: Project[] = [
     id: 'legal-entity-extraction',
     title: 'Ekstraksi Entitas Hukum Indonesia',
     category: 'Machine Learning',
-    description: 'Asisten peneliti dalam pengenalan entitas bernama (NER) teks hukum Indonesia menggunakan Pemrosesan Bahasa Alami (NLP) dan Machine Learning.',
-    longDescription: 'Mengembangkan model Named Entity Recognition (NER) yang disesuaikan khusus untuk berkas putusan Mahkamah Agung dan regulasi hukum Indonesia. Berhasil mengekstrak nomor undang-undang, lembaga hukum, sanksi, dan amar putusan dengan akurasi F1-score tinggi.',
-    technologies: ['Python', 'Machine Learning', 'Computer Vision', 'OpenCV', 'SpaCy', 'PyTorch'],
+    description: 'Asisten Peneliti: Berkontribusi dalam penelitian Natural Language Processing (NLP) untuk melakukan ekstraksi entitas hukum (nama pihak, pasal, dan amar putusan) dari dokumen putusan pengadilan berbahasa Indonesia.',
+    longDescription: 'Merancang skema anotasi dan melakukan penandaan entitas hukum (Named Entity Recognition/NER) pada dataset berbasis teks untuk proses pelatihan dan validasi model Machine Learning.',
+    technologies: ['Python', 'NLP', 'NER', 'Machine Learning', 'Dataset Annotation'],
     image: '/legal_ner_ai.png',
     githubUrl: 'https://github.com/rivaldijefri/legal-entity-extraction-nlp',
     demoUrl: 'https://huggingface.co/spaces/rivaldijefri/indonesian-legal-ner',
     featured: true,
     color: '#9B51E0'
+  },
+  {
+    id: 'coral-reef-attention',
+    title: 'Klasifikasi Terumbu Karang (ResNet & Attention)',
+    category: 'Machine Learning',
+    description: 'Asisten Peneliti: Melakukan pengumpulan, pengorganisasian, dan studi literatur kritis terhadap jurnal ilmiah internasional terkait arsitektur Deep Learning, Residual Networks (ResNet), dan Multi-Head Attention.',
+    longDescription: 'Menganalisis metodologi penelitian terbaru dari berbagai database ilmiah sebagai dasar pengembangan kerangka model riset pemrosesan citra (Computer Vision) untuk klasifikasi struktur terumbu karang.',
+    technologies: ['Deep Learning', 'ResNet', 'Multi-Head Attention', 'Computer Vision', 'Python'],
+    image: '/legal_ner_ai.png',
+    githubUrl: 'https://github.com/rivaldijefri',
+    demoUrl: '#',
+    featured: false,
+    color: '#FF8AAE'
+  },
+  {
+    id: 'pengabdian-masyarakat-sman5',
+    title: 'Pelatihan Modul Interaktif SMAN 5 Parepare',
+    category: 'Pengembangan Web',
+    description: 'Pengabdian Masyarakat: Menyusun buku panduan teknis dan memberikan bimbingan teknis pembuatan modul pembelajaran digital interaktif berbasis aplikasi Quizizz dan Google Slides bagi guru SMAN 5 Parepare.',
+    longDescription: 'Menyusun buku panduan teknis yang terstruktur untuk membantu guru SMAN 5 Parepare menguasai pembuatan modul pembelajaran digital secara mandiri serta memberikan pendampingan langsung penggunaan Quizizz dan Google Slides.',
+    technologies: ['Quizizz', 'Google Slides', 'Modul Digital', 'Pengabdian Masyarakat'],
+    image: '/repo_kampus.png',
+    githubUrl: 'https://github.com/rivaldijefri',
+    demoUrl: '#',
+    featured: false,
+    color: '#6BCB77'
   }
 ];
 
 export const TIMELINE: TimelineItem[] = [
   {
     id: 't5',
-    role: 'Pengembang IoT (IoT Developer)',
-    category: 'Pengalaman Profesional',
-    period: '2023 - Sekarang',
-    institution: 'Laboratorium Teknologi Terintegrasi & Embedded',
-    description: 'Merancang sirkuit perangkat keras, mikrokontroler (ESP32/Arduino), bridge telemetri MQTT, dan mengintegrasikan jaringan sensor IoT dengan dashboard pemantauan cloud.',
-    skills: ['ESP32', 'MQTT', 'C++', 'ThingsBoard', 'Desain Sirkuit'],
+    role: 'Pengembang IoT (Smart Trash Bin)',
+    category: 'Pengalaman Projek',
+    period: 'Agustus 2025 – April 2026',
+    institution: 'Institut Teknologi Bacharuddin Jusuf Habibie',
+    description: 'Merancang dan mengembangkan sistem tempat sampah pintar berbasis ESP32, sensor ultrasonik, rain sensor, proximity induktif, MQTT, ThingsBoard, serta aktuator motor servo & stepper.',
+    skills: ['ESP32', 'MQTT', 'ThingsBoard', 'Sensor Ultrasonik', 'Servo & Stepper'],
     color: '#FFD93D'
   },
   {
     id: 't4',
-    role: 'Asisten Peneliti - NLP',
-    category: 'Riset Akademik',
-    period: '2023 - 2024',
-    institution: 'Laboratorium AI & Data Science',
-    description: 'Peneliti utama dalam Pengenalan Entitas Bernama (NER) Dokumen Hukum Indonesia. Memproses korpus hukum, melakukan anotasi data, dan mengevaluasi model NLP berbasis Transformer.',
-    skills: ['Python', 'NLP', 'Transformers', 'SpaCy', 'Data Mining'],
-    color: '#9B51E0'
+    role: 'Asisten Dosen - Basis Data',
+    category: 'Pengajaran Akademik',
+    period: 'Oktober 2025 – Januari 2026',
+    institution: 'Institut Teknologi Bacharuddin Jusuf Habibie',
+    description: 'Mendampingi dosen pengampu dan membimbing mahasiswa dalam memahami konsep fundamental basis data, perancangan Entity Relationship Diagram (ERD), normalisasi tabel, dan penulisan query SQL yang efisien.',
+    skills: ['SQL', 'MySQL', 'ERD', 'Normalisasi Tabel', 'Optimasi Query'],
+    color: '#6BCB77'
   },
   {
     id: 't3',
-    role: 'Asisten Peneliti - Computer Vision',
-    category: 'Riset Akademik',
-    period: '2023',
-    institution: 'Pusat Riset Computer Vision & Robotika',
-    description: 'Mengembangkan alur klasifikasi citra dan deteksi objek menggunakan OpenCV dan jaringan saraf tiruan (deep neural networks) untuk sistem inspeksi otomatis.',
-    skills: ['OpenCV', 'Python', 'CNNs', 'Object Detection', 'PyTorch'],
-    color: '#FF6B6B'
-  },
-  {
-    id: 't2',
     role: 'Asisten Dosen - Pemrograman Web',
     category: 'Pengajaran Akademik',
-    period: '2022 - 2023',
-    institution: 'Program Studi Ilmu Komputer',
-    description: 'Membimbing lebih dari 120 mahasiswa dalam praktikum rekayasa web full-stack, mencakup HTML/CSS, JavaScript, PHP, arsitektur MVC, dan API web modern.',
-    skills: ['JavaScript', 'PHP', 'Laravel', 'Arsitektur Web', 'Mentoring'],
+    period: 'April 2025 – Juni 2025',
+    institution: 'Institut Teknologi Bacharuddin Jusuf Habibie',
+    description: 'Memberikan bimbingan teknis, pemecahan masalah (troubleshooting), dan evaluasi kode kepada mahasiswa dalam pengembangan proyek akhir aplikasi web berbasis Laravel, CodeIgniter, dan PHP Native.',
+    skills: ['Laravel', 'CodeIgniter 3', 'PHP Native', 'Troubleshooting', 'Evaluasi Kode'],
     color: '#4D96FF'
   },
   {
+    id: 't2',
+    role: 'Asisten Peneliti - Ekstraksi Entitas Hukum (NLP)',
+    category: 'Riset Akademik',
+    period: '2024',
+    institution: 'Institut Teknologi Bacharuddin Jusuf Habibie',
+    description: 'Berkontribusi dalam penelitian Natural Language Processing (NLP) ekstraksi entitas hukum dari dokumen putusan pengadilan Indonesia serta merancang skema anotasi dan penandaan NER.',
+    skills: ['Python', 'NLP', 'Named Entity Recognition (NER)', 'Dataset Annotation'],
+    color: '#9B51E0'
+  },
+  {
     id: 't1',
-    role: 'Asisten Dosen - Basis Data',
-    category: 'Pengajaran Akademik',
-    period: '2022',
-    institution: 'Program Studi Ilmu Komputer',
-    description: 'Mengampu sesi praktikum laboratorium basis data yang mencakup perancangan basis data relasional, pemodelan E-R, pengindeksan SQL, normalisasi, dan stored procedure MySQL.',
-    skills: ['SQL', 'MySQL', 'Pemodelan Relasional', 'Optimasi Kueri'],
-    color: '#6BCB77'
+    role: 'Asisten Peneliti - Klasifikasi Terumbu Karang (CV)',
+    category: 'Riset Akademik',
+    period: '2023',
+    institution: 'Institut Teknologi Bacharuddin Jusuf Habibie',
+    description: 'Melakukan pengumpulan, pengorganisasian, dan studi literatur kritis terhadap jurnal ilmiah internasional terkait arsitektur Deep Learning, ResNet, dan Multi-Head Attention untuk klasifikasi terumbu karang.',
+    skills: ['Deep Learning', 'ResNet', 'Multi-Head Attention', 'Computer Vision', 'Studi Literatur'],
+    color: '#FF6B6B'
   }
 ];
 
 export const ORGANIZATIONS: OrganizationItem[] = [
   {
     id: 'hero',
-    name: 'Habibie Engineering Robotic Organization',
-    role: 'Anggota Inti Divisi Hardware & Embedded Systems',
-    period: '2021 - 2024',
-    description: 'Insinyur utama dalam pembuatan prototipe robotika kompetitif, navigasi rover otonom, dan modul kontrol embedded.',
+    name: 'Habibie Engineering Robotic Organization (HERO)',
+    role: 'Anggota Bidang Riset dan Pengembangan',
+    period: 'September 2023 – Desember 2024',
+    description: 'Berperan aktif dalam riset dan perancangan purwarupa (prototype) proyek berbasis Internet of Things (IoT), robotika, dan sistem embedded.',
     achievements: [
-      'Pengembang utama perangkat keras untuk kompetisi robotika tingkat regional',
-      'Meningkatkan partisipasi dengan mengoperasikan 5+ workshop IoT & robotika',
-      'Merancang sirkuit PCB kustom untuk node sensor mikrokontroler'
+      'Riset dan perancangan purwarupa proyek berbasis IoT, robotika, dan sistem embedded',
+      'Berkolaborasi lintas tim dalam pengujian perangkat keras (hardware debugging) dan pemrograman mikrokontroler',
+      'Mengadakan serta memfasilitasi lokakarya pelatihan teknis untuk meningkatkan kompetensi robotika & programming'
     ],
     color: '#FFD93D',
     badge: 'HERO Robotics'
   },
   {
     id: 'bem',
-    name: 'BEM Institut Teknologi Bacharuddin Jusuf Habibie',
-    role: 'Ketua Departemen Teknologi & Informasi',
-    period: '2022 - 2023',
-    description: 'Memimpin inisiatif transformasi digital, pengembanan portal web kampus, dan kegiatan teknologi mahasiswa.',
+    name: 'Badan Eksekutif Mahasiswa (BEM) ITH',
+    role: 'Anggota Divisi Penalaran',
+    period: 'Januari 2024 – Desember 2024',
+    description: 'Menginisiasi dan mengorganisasi pelaksanaan program kerja pengembangan akademik, termasuk seminar teknologi, workshop, dan kompetisi mahasiswa tingkat kampus.',
     achievements: [
-      'Mengarahkan pengembangan portal web digital kemahasiswaan kampus',
-      'Mengordinasikan Hackathon kampus yang diikuti oleh lebih dari 200 peserta',
-      'Mengelola infrastruktur TI untuk sistem pemilu mahasiswa digital'
+      'Menginisiasi dan mengorganisasi program kerja pengembangan akademik (seminar teknologi & workshop)',
+      'Mengkoordinasikan kompetisi mahasiswa tingkat kampus',
+      'Berkoordinasi antar-divisi dan pemangku kepentingan kampus untuk kelancaran kegiatan ilmiah'
     ],
     color: '#4D96FF',
     badge: 'BEM ITH'
@@ -284,39 +312,59 @@ export const ORGANIZATIONS: OrganizationItem[] = [
 
 export const CERTIFICATES: CertificateItem[] = [
   {
-    id: 'c1',
-    title: 'Pengembang Sistem IoT Tersertifikasi',
-    issuer: 'Badan Nasional Sertifikasi Profesi (BNSP)',
-    date: '2024',
-    image: '/smart_trash_bin.png',
-    credentialUrl: '#',
+    id: 'cert-1',
+    title: 'Elektronika Prototipe Dan Pemrograman',
+    issuer: 'BNSP',
+    date: '2025',
+    image: '/bnsp.jpeg',
+    credentialUrl: 'https://drive.google.com/file/d/15U8zOOLuH14E6biw4MQ_WcNkrOO8bC-p/view?usp=sharing',
     color: '#FFD93D'
   },
   {
-    id: 'c2',
-    title: 'Spesialis Rekayasa Web Full Stack',
-    issuer: 'Dicoding Academy',
-    date: '2023',
-    image: '/emonev_bappeda.png',
-    credentialUrl: '#',
+    id: 'cert-2',
+    title: 'Belajar Back-End Pemula dengan Python',
+    issuer: 'Dicoding Indonesia',
+    date: '2026',
+    image: '/back-end_pemula dengan pyhton.png',
+    credentialUrl: 'https://drive.google.com/file/d/1owNyZ-d3mZTFigaeJ6BYUupJlvcezUOM/view?usp=sharing',
     color: '#4D96FF'
   },
   {
-    id: 'c3',
-    title: 'Praktisi Computer Vision & Deep Learning',
-    issuer: 'Lembaga Riset AI',
-    date: '2023',
-    image: '/legal_ner_ai.png',
-    credentialUrl: '#',
+    id: 'cert-3',
+    title: 'Belajar Fundamental Deep Learning',
+    issuer: 'Dicoding Indonesia',
+    date: '2026',
+    image: '/fundamental deep learning.png',
+    credentialUrl: 'https://drive.google.com/file/d/1E_sVrrc_6NSdTgCoNPV2rg53RMuzHxEk/view?usp=sharing',
+    color: '#9B51E0'
+  },
+  {
+    id: 'cert-4',
+    title: 'Belajar Membuat Aplikasi Back-End Pemula dengan Google Cloud',
+    issuer: 'Dicoding Indonesia & Google Cloud',
+    date: '2026',
+    image: '/aplikasi back-end dengan google cloud.png',
+    credentialUrl: 'https://drive.google.com/file/d/148GbxZ-2sEBfq88ykM0eXK5xuq2evt0I/view?usp=sharing',
+    color: '#6BCB77'
+  },
+  {
+    id: 'cert-5',
+    title: 'Belajar Penerapan AI di Aplikasi Web',
+    issuer: 'Dicoding Indonesia',
+    date: '2026',
+    image: '/penerapan ai di web.png',
+    credentialUrl: 'https://drive.google.com/file/d/1R2YSZACRyRhqiQsdv-VcbPxAUyiK0tmr/view?usp=sharing',
     color: '#FF6B6B'
   },
   {
-    id: 'c4',
-    title: 'Penghargaan Kelulusan & IPK Tinggi (3.86)',
-    issuer: 'Institut Teknologi Bacharuddin Jusuf Habibie',
-    date: '2024',
-    image: '/campus_repository.png',
-    credentialUrl: '#',
-    color: '#6BCB77'
+    id: 'cert-6',
+    title: 'Membangun Sistem Machine Learning',
+    issuer: 'Dicoding Indonesia',
+    date: '2026',
+    image: '/sistem ML.png',
+    credentialUrl: 'https://drive.google.com/file/d/1BEmJhdnqa8REbGcJUqLKdIYA-pJ-UPcO/view?usp=sharing',
+    color: '#FF8AAE'
   }
 ];
+
+

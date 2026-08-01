@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ShieldCheck, Eye } from 'lucide-react';
+import { ShieldCheck, Eye, ExternalLink } from 'lucide-react';
 import { CERTIFICATES } from '@/data/portfolioData';
 import type { CertificateItem } from '@/data/portfolioData';
 import { Card } from './ui/Card';
@@ -24,7 +24,7 @@ export const Certificates: React.FC = () => {
       </div>
 
       {/* Grid Layout */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {CERTIFICATES.map((cert, idx) => (
           <motion.div
             key={cert.id}
@@ -59,17 +59,34 @@ export const Certificates: React.FC = () => {
                 </h3>
               </div>
 
-              {/* View Certificate Button */}
-              <div className="pt-3 border-t-2 border-dashed border-zinc-200 dark:border-zinc-800">
+              {/* View Certificate Buttons */}
+              <div className="pt-3 border-t-2 border-dashed border-zinc-200 dark:border-zinc-800 flex flex-col sm:flex-row gap-2">
                 <Button
-                  variant="yellow"
+                  variant="default"
                   size="sm"
                   fullWidth
                   onClick={() => setSelectedCertificate(cert)}
                   icon={<Eye className="w-4 h-4" />}
                 >
-                  Lihat Sertifikat
+                  Detail
                 </Button>
+                {cert.credentialUrl && cert.credentialUrl !== '#' && (
+                  <a
+                    href={cert.credentialUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full"
+                  >
+                    <Button
+                      variant="yellow"
+                      size="sm"
+                      fullWidth
+                      icon={<ExternalLink className="w-4 h-4" />}
+                    >
+                      Buka Drive
+                    </Button>
+                  </a>
+                )}
               </div>
             </Card>
           </motion.div>
@@ -98,9 +115,24 @@ export const Certificates: React.FC = () => {
             <p className="font-sans text-xs text-zinc-500 font-medium">
               Kredensial digital terverifikasi yang diberikan kepada Muhammad Rivaldi Jefri atas pencapaian keahlian.
             </p>
+            {selectedCertificate.credentialUrl && selectedCertificate.credentialUrl !== '#' && (
+              <div className="pt-2">
+                <a
+                  href={selectedCertificate.credentialUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block w-full"
+                >
+                  <Button variant="yellow" size="md" fullWidth icon={<ExternalLink className="w-4 h-4" />}>
+                    Buka Sertifikat di Google Drive
+                  </Button>
+                </a>
+              </div>
+            )}
           </div>
         </Modal>
       )}
     </section>
   );
 };
+
