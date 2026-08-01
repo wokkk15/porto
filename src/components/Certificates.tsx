@@ -62,7 +62,7 @@ export const Certificates: React.FC = () => {
               {/* View Certificate Buttons */}
               <div className="pt-3 border-t-2 border-dashed border-zinc-200 dark:border-zinc-800 flex flex-col sm:flex-row gap-2">
                 <Button
-                  variant="default"
+                  variant="dark"
                   size="sm"
                   fullWidth
                   onClick={() => setSelectedCertificate(cert)}
