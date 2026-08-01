@@ -42,7 +42,7 @@ export const About: React.FC = () => {
                 {PERSONAL_INFO.name}
               </h3>
               <p className="font-mono text-sm font-bold text-[#FF6B6B] dark:text-[#FFD93D] mb-4">
-                Insinyur & Ilmuwan Komputer
+                Ilmuwan Komputer
               </p>
 
               <div className="flex items-center justify-center gap-2 font-mono text-xs font-bold text-zinc-600 dark:text-zinc-400 bg-zinc-100 dark:bg-zinc-800 p-2.5 rounded-xl neo-border-sm">
