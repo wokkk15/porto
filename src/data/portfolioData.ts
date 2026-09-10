@@ -58,11 +58,11 @@ export const PERSONAL_INFO = {
     'Pengembang Full Stack',
     'Antusias Computer Vision'
   ],
-  bio: 'Freshgraduates S1 Ilmu Komputer dengan predikat memuaskan (IPK 3.86) yang memiliki keahlian kuat dalam pengembangan Internet of Things (IoT) dan Fullstack Web Development. Berpengalaman pengelolaan data melalui kegiatan verifikasi penerima bantuan pangan di Perum BULOG serta membangun sistem integrasi perangkat keras dan lunak menggunakan ESP32, MQTT, ThingsBoard, serta framework Laravel dan Vue.js/Inertia.js untuk proyek pemerintahan dan akademik. Aktif sebagai asisten dosen dengan kemampuan komunikasi serta manajemen proyek yang teruji.',
+  bio: 'Freshgraduates S1 Ilmu Komputer dengan predikat memuaskan (IPK 3.85) yang memiliki keahlian kuat dalam pengembangan Internet of Things (IoT) dan Fullstack Web Development. Berpengalaman pengelolaan data melalui kegiatan verifikasi penerima bantuan pangan di Perum BULOG serta membangun sistem integrasi perangkat keras dan lunak menggunakan ESP32, MQTT, ThingsBoard, serta framework Laravel dan Vue.js/Inertia.js untuk proyek pemerintahan dan akademik. Aktif sebagai asisten dosen dengan kemampuan komunikasi serta manajemen proyek yang teruji.',
   location: 'Parepare, Sulawesi Selatan',
-  education: 'S1 Ilmu Komputer (IPK 3.86)',
+  education: 'S1 Ilmu Komputer (IPK 3.85)',
   university: 'Institut Teknologi Bacharuddin Jusuf Habibie',
-  gpa: '3.86',
+  gpa: '3.85',
   interests: [
     'Internet of Things (IoT)',
     'Kecerdasan Buatan (AI)',
