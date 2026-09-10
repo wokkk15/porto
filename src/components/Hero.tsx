@@ -54,7 +54,7 @@ export const Hero: React.FC = () => {
         className="absolute top-8 left-4 lg:left-12 hidden md:flex items-center gap-2 p-3 bg-[#FFD93D] text-black neo-border neo-shadow rounded-xl z-10"
       >
         <Cpu className="w-6 h-6 stroke-[2.5]" />
-        <span className="font-mono font-bold text-xs uppercase">ESP32 & Sensor</span>
+        <span className="font-mono font-bold text-xs uppercase">IoT Engineer</span>
       </motion.div>
 
       <motion.div
@@ -63,7 +63,7 @@ export const Hero: React.FC = () => {
         className="absolute top-24 right-4 lg:right-16 hidden md:flex items-center gap-2 p-3 bg-[#4D96FF] text-black neo-border neo-shadow rounded-xl z-10"
       >
         <Code2 className="w-6 h-6 stroke-[2.5]" />
-        <span className="font-mono font-bold text-xs uppercase">Laravel & Vue</span>
+        <span className="font-mono font-bold text-xs uppercase">Fullstack Engineer</span>
       </motion.div>
 
       <motion.div

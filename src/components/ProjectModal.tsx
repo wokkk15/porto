@@ -18,18 +18,14 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onC
   return (
     <Modal isOpen={isOpen} onClose={onClose} title={project.title}>
       <div className="space-y-6">
-        {/* Project Image Banner */}
-        <div className="relative w-full h-64 sm:h-72 rounded-xl neo-border overflow-hidden bg-zinc-200">
-          <img
-            src={project.image}
-            alt={project.title}
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute top-3 right-3">
-            <Badge color={project.color} size="md">
-              {project.category}
-            </Badge>
-          </div>
+        {/* Category Header */}
+        <div className="flex items-center justify-between gap-2">
+          <Badge color={project.color} size="md" className="text-black font-extrabold">
+            {project.category}
+          </Badge>
+          <span className="font-mono text-xs font-black bg-black text-white px-2.5 py-1 rounded-lg neo-border-sm uppercase">
+            PROYEK UNGGULAN
+          </span>
         </div>
 
         {/* Project Description */}

@@ -13,7 +13,7 @@ export const Projects: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('Semua');
   const [activeModalProject, setActiveModalProject] = useState<Project | null>(null);
 
-  const categories = ['Semua', 'Internet of Things', 'Sistem Informasi Pemerintah', 'Pengembangan Web', 'Machine Learning'];
+  const categories = ['Semua', ...Array.from(new Set(PROJECTS.map(p => p.category)))];
 
   const filteredProjects = selectedCategory === 'Semua'
     ? PROJECTS
@@ -61,25 +61,17 @@ export const Projects: React.FC = () => {
               transition={{ duration: 0.3, delay: idx * 0.05 }}
             >
               <Card
-                className="h-full bg-white dark:bg-[#1E1E24] flex flex-col justify-between overflow-hidden group cursor-pointer"
+                className="h-full bg-white dark:bg-[#1E1E24] flex flex-col justify-between overflow-hidden group cursor-pointer p-6"
                 onClick={() => setActiveModalProject(project)}
               >
                 <div>
-                  {/* Image Container with Category Badge */}
-                  <div className="relative w-full h-56 sm:h-64 rounded-xl neo-border overflow-hidden mb-6 bg-zinc-200">
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                    <div className="absolute top-3 left-3">
-                      <Badge color={project.color} size="sm">
-                        {project.category}
-                      </Badge>
-                    </div>
-
-                    <div className="absolute bottom-3 right-3 bg-white text-black p-2 rounded-xl neo-border neo-shadow-sm opacity-0 group-hover:opacity-100 transition-opacity">
-                      <ArrowUpRight className="w-5 h-5 stroke-[2.5]" />
+                  {/* Category & Arrow Badge Header */}
+                  <div className="flex items-center justify-between gap-2 mb-4">
+                    <Badge color={project.color} size="sm" className="text-black font-black">
+                      {project.category}
+                    </Badge>
+                    <div className="bg-zinc-100 dark:bg-zinc-800 text-black dark:text-white p-1.5 rounded-lg neo-border-sm group-hover:bg-[#FFD93D] group-hover:text-black transition-colors">
+                      <ArrowUpRight className="w-4 h-4 stroke-[3]" />
                     </div>
                   </div>
 
